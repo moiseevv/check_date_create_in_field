@@ -17,6 +17,6 @@ def walk(path):
 	for p,d,l in os.walk(path):
 		if not os.path.islink(p):
 			if test_time_create(p):
-				print(p)
+				print('  created directory ',p)
 
 walk(path)
